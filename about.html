@@ -4,37 +4,60 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Us — SPS</title>
-    <link rel="stylesheet" href="./assets/output.css" />
+    <link rel="stylesheet" href="/assets/output.css" />
   </head>
-  <body class="font-sans">
+  <body class="antialiased text-gray-800 font-sans">
+    <a class="sr-only focus:not-sr-only" href="#main">Skip to content</a>
+
+    <!-- Canonical Header (from index.html) -->
     <header class="bg-white">
       <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div class="flex items-center">
-          <img src="assets/images/logo-2023.png" alt="logo" class="h-8 w-auto mr-6" />
+          <img src="/assets/images/logo-2023.png" alt="Software Productivity Strategists logo" class="h-8 w-auto mr-6" />
         </div>
-        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
-          <a href="index.html" class="whitespace-nowrap">Home</a>
-          <a href="products.html" class="whitespace-nowrap">Products</a>
-          <a href="services.html" class="whitespace-nowrap">Services</a>
-          <a href="verticals.html" class="whitespace-nowrap">Verticals</a>
-          <a href="spinnlabs.html" class="whitespace-nowrap">SpinnLabs</a>
-          <a href="activities.html" class="whitespace-nowrap">Activities</a>
-          <a href="about.html" class="whitespace-nowrap">About Us</a>
-          <a href="contracts.html" class="whitespace-nowrap">Contracts</a>
-          <a href="contact.html" class="whitespace-nowrap">Contact Us</a>
+
+        <nav aria-label="Main navigation" class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
+          <a href="index.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Home</a>
+          <a href="products.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Products</a>
+          <a href="services.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Services</a>
+          <a href="verticals.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Verticals</a>
+          <a href="spinnlabs.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">SpinnLabs</a>
+          <a href="activities.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Activities</a>
+          <a href="about.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">About Us</a>
+          <a href="contracts.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Contracts</a>
+          <a href="contact.html" class="whitespace-nowrap hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">Contact Us</a>
           <a href="internships.html" role="button" class="inline-block bg-[#2b1162] text-white px-4 py-2 rounded-full shadow hover:bg-[#3a1b88] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3a1b88]">Intern Portal</a>
         </nav>
+
         <button id="menuBtn" class="md:hidden p-2" aria-label="Open menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </header>
 
-    <main id="main">
+    <!-- Mobile menu (hidden on md+) -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white shadow">
+      <div class="px-4 pt-4 pb-6">
+        <nav class="flex flex-col gap-3">
+          <a href="index.html" class="text-gray-700">Home</a>
+          <a href="products.html" class="text-gray-700">Products</a>
+          <a href="services.html" class="text-gray-700">Services</a>
+          <a href="verticals.html" class="text-gray-700">Verticals</a>
+          <a href="spinnlabs.html" class="text-gray-700">SpinnLabs</a>
+          <a href="activities.html" class="text-gray-700">Activities</a>
+          <a href="about.html" class="text-gray-700">About Us</a>
+          <a href="contracts.html" class="text-gray-700">Contracts</a>
+          <a href="contact.html" class="text-gray-700">Contact Us</a>
+          <a href="internships.html" role="button" class="inline-block mt-2 bg-[#2b1162] text-white px-4 py-2 rounded-full shadow hover:bg-[#3a1b88]">Intern Portal</a>
+        </nav>
+      </div>
+    </div>
+
+    <main id="main" class="max-w-7xl mx-auto px-6 py-12">
       <!-- About page intentionally contains only the navbar and footer per requirements -->
     </main>
 
-    <!-- Footer (copied from index) -->
+    <!-- Footer (matches index.html) -->
     <footer class="site-footer bg-[#0b1220] text-white">
       <div class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -65,8 +88,6 @@
             <p class="mt-3 text-sm text-gray-300">Call Us : <a href="tel:3013372290" class="text-white font-semibold">301-337-2290</a></p>
             <p class="mt-1 text-sm text-gray-300">Email us : <a href="mailto:support@spsnet.com" class="text-white font-semibold">support@spsnet.com</a></p>
             <p class="mt-1 text-sm text-gray-300">For Internship Queries: <a href="mailto:Internship@spsnet.com" class="text-white font-semibold">Internship@spsnet.com</a></p>
-
-            <!-- Social icons removed per request -->
           </div>
         </div>
 
@@ -79,5 +100,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>

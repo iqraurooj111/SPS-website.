@@ -7,7 +7,7 @@
     "dev": "postcss css/styles.css -o assets/output.css --watch",
     "build": "postcss css/styles.css -o assets/output.css --env production --verbose",
     "tailwind-cli": "node scripts/build-tailwind-cli.js",
-    "preview": "npx serve . -s",
+    "preview": "npx serve .",
     "start": "echo 'Run `npm run dev` to start Tailwind in watch mode'"
   },
   "keywords": [],
