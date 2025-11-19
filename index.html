@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPS - Landing (sample)</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Local built CSS (produced by `npm run build` or `npm run dev`) -->
+    <link rel="stylesheet" href="./assets/output.css" />
+    <!-- Tailwind CDN fallback for quick preview (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="antialiased text-gray-800 font-sans">
+    <a class="sr-only focus:not-sr-only" href="#main">Skip to content</a>
+    <!-- Header -->
+    <header class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- logo left -->
+        <div class="flex items-center">
+          <img src="assets/images/logo-2023.png" alt="Software Productivity Strategists logo" class="h-8 w-auto mr-6" />
+        </div>
+
+        <!-- nav right on desktop -->
+        <nav aria-label="Main navigation" class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
+          <a href="index.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Home</a>
+          <a href="products.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Products</a>
+          <a href="services.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Services</a>
+          <a href="verticals.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Verticals</a>
+          <a href="spinnlabs.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">SpinnLabs</a>
+          <a href="activities.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Activities</a>
+          <a href="about.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">About Us</a>
+          <a href="contracts.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Contracts</a>
+          <a href="contact.html" class="whitespace-nowrap hover:text-brand.accent focus:outline-none focus:ring-2 focus:ring-brand.accent rounded">Contact Us</a>
+          <a href="internships.html" role="button" class="inline-block bg-[#2b1162] text-white px-4 py-2 rounded-full shadow hover:bg-[#3a1b88] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3a1b88]">Intern Portal</a>
+        </nav>
+
+        <!-- mobile menu button -->
+        <button id="menuBtn" class="md:hidden p-2" aria-label="Open menu">
+          <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile menu (hidden on md+) -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white shadow">
+      <div class="px-4 pt-4 pb-6">
+        <nav class="flex flex-col gap-3">
+          <a href="index.html" class="text-gray-700">Home</a>
+          <a href="products.html" class="text-gray-700">Products</a>
+          <a href="services.html" class="text-gray-700">Services</a>
+          <a href="verticals.html" class="text-gray-700">Verticals</a>
+          <a href="spinnlabs.html" class="text-gray-700">SpinnLabs</a>
+          <a href="activities.html" class="text-gray-700">Activities</a>
+          <a href="about.html" class="text-gray-700">About Us</a>
+          <a href="contracts.html" class="text-gray-700">Contracts</a>
+          <a href="contact.html" class="text-gray-700">Contact Us</a>
+          <a href="internships.html" role="button" class="inline-block mt-2 bg-[#2b1162] text-white px-4 py-2 rounded-full shadow hover:bg-[#3a1b88]">Intern Portal</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <main>
+      <section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <!-- Left content -->
+          <div>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-brand.accent">What if</h2>
+            <ul class="mt-6 space-y-4 text-lg text-gray-700 list-disc list-inside">
+              <li>You could enhance your Identity Management</li>
+              <li>You could modernize your legacy enterprise information systems</li>
+            </ul>
+            <div class="mt-8">
+              <a href="#" class="inline-block px-5 py-2 border border-indigo-700 text-indigo-700 rounded-full">Request Consultation</a>
+            </div>
+          </div>
+
+          <!-- Right hero image + overlay text -->
+          <div class="relative">
+            <div class="overflow-hidden rounded-tl-[140px] rounded-br-[140px] shadow-lg">
+              <img src="assets/images/20034124621961445561621850239.webp" alt="team meeting" class="w-full h-96 object-cover" />
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="bg-white/80 px-6 py-3 rounded-full shadow-md text-center max-w-xs">
+                <p class="text-sm text-gray-800">How can we help you today?</p>
+              </div>
+            </div>
+            <div class="absolute right-6 top-8 text-right max-w-xs">
+              <h3 class="text-white font-extrabold text-xl md:text-2xl leading-tight">We are an <span class="text-brand.accent">IT Solutions Provider</span><br/>focused on <span class="text-brand.accent">Solving Business Problems</span></h3>
+              <p class="text-brand.orange font-semibold mt-2">AI, Cloud, Automation & Cybersecurity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Startups (cards) -->
+      <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="bg-gradient-to-r from-[#2b1162] to-[#4a2ea6] text-white rounded-md overflow-hidden shadow-lg">
+          <div class="px-8 py-14 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold">Our Startups</h2>
+            <p class="mt-3 text-sm md:text-base max-w-3xl mx-auto">Digital solutions we have built for ourselves and our customers</p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1: left pale yellow with image right -->
+          <div class="flex bg-[#fff6df] rounded-md shadow-inner overflow-hidden">
+            <div class="p-8 flex-1">
+              <h3 class="text-lg font-bold text-[#3b2b1a]">AZALIO</h3>
+              <p class="mt-3 text-sm text-[#3b2b1a]">Keep your frontline employees happy. Reward Employees. Track employee engagement. Manage workforce operations.</p>
+              <a href="#" class="inline-block mt-6 bg-[#2b1162] text-white px-4 py-2 rounded-full text-sm">View App</a>
+            </div>
+            <div class="w-40 flex items-center justify-center p-4">
+              <img src="assets/images/20034124621961445561621850239.webp" alt="AZALIO" class="object-contain h-28" />
+            </div>
+          </div>
+
+          <!-- Card 2: right mint -->
+          <div class="flex bg-[#dffcf6] rounded-md shadow-inner overflow-hidden">
+            <div class="p-8 flex-1">
+              <h3 class="text-lg font-bold text-[#0b3b33]">MYID Self Verify</h3>
+              <p class="mt-3 text-sm text-[#0b3b33]">MYID helps organizations allow their employees to manage their corporate identity through secure and easy-to-use mobile application.</p>
+              <a href="#" class="inline-block mt-6 bg-[#2b1162] text-white px-4 py-2 rounded-full text-sm">View App</a>
+            </div>
+            <div class="w-40 flex items-center justify-center p-4">
+              <img src="assets/images/logo-2023.png" alt="MYID" class="object-contain h-24" />
+            </div>
+          </div>
+
+          <!-- Card 3: left gray -->
+          <div class="flex bg-[#f3f4f6] rounded-md shadow-inner overflow-hidden">
+            <div class="p-8 flex-1">
+              <h3 class="text-lg font-bold text-[#111827]">CSM</h3>
+              <p class="mt-3 text-sm text-[#111827]">CSM helps organizations augment security management by standardizing it around NIST. It helps identify, protect, detect, respond.</p>
+              <a href="#" class="inline-block mt-6 bg-[#2b1162] text-white px-4 py-2 rounded-full text-sm">View App</a>
+            </div>
+            <div class="w-40 flex items-center justify-center p-4">
+              <img src="assets/images/20034124621961445561621850239.webp" alt="CSM" class="object-contain h-24" />
+            </div>
+          </div>
+
+          <!-- Card 4: right blue -->
+          <div class="flex bg-[#cfeefd] rounded-md shadow-inner overflow-hidden">
+            <div class="p-8 flex-1">
+              <h3 class="text-lg font-bold text-[#052b36]">BMS</h3>
+              <p class="mt-3 text-sm text-[#052b36]">Get real-time insights into every aspect of your company's performance, optimize processes and streamline business with our Business Management System.</p>
+              <a href="#" class="inline-block mt-6 bg-[#2b1162] text-white px-4 py-2 rounded-full text-sm">View App</a>
+            </div>
+            <div class="w-40 flex items-center justify-center p-4">
+              <img src="assets/images/logo-2023.png" alt="BMS" class="object-contain h-24" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Decorative wave and callout -->
+      <section class="bg-[#22163b] text-white">
+        <div class="relative">
+          <svg viewBox="0 0 1440 120" class="w-full -mb-1" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M0,64L80,53.3C160,43,320,21,480,42.7C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+          <div class="max-w-7xl mx-auto px-6 py-12 text-center">
+            <p class="text-lg md:text-xl">Whether you are an entrepreneur looking for an engineering team or an enterprise pursuing digital transformation we can help you bring your vision to reality.</p>
+            <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="bg-white/5 p-4 rounded-md">CYBERSECURITY</div>
+              <div class="bg-white/5 p-4 rounded-md">CLOUD</div>
+              <div class="bg-white/5 p-4 rounded-md">AI & AUTOMATION</div>
+              <div class="bg-white/5 p-4 rounded-md">COLLABORATION</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
