@@ -69,6 +69,22 @@
 	.brand-accent { color: #00bcd4; }
 }
 
+/* Brand color utilities used in HTML classes */
+.text-brand-accent { color: #00bcd4; }
+.text-brand-orange { color: #f59e0b; }
+.focus\:ring-brand-accent:focus { box-shadow: 0 0 0 4px rgba(0,188,212,0.15); }
+
+/* Hero and card specific tweaks */
+.hero-title { font-size: 2.25rem; line-height: 1.05; font-weight: 800; }
+.hero-sub { font-size: 1.125rem; color: #374151; }
+
+.card { border-radius: 0.5rem; box-shadow: 0 6px 18px rgba(15,23,42,0.06); overflow: hidden; display: flex; }
+.card .card-body { padding: 1.5rem; flex: 1; }
+.card .card-img { width: 10rem; display:flex; align-items:center; justify-content:center; padding:1rem; }
+.card-title { font-size: 1.125rem; font-weight: 700; }
+.card-desc { margin-top: 0.5rem; color: #374151; font-size: 0.95rem; }
+.card-cta { margin-top: 1rem; background-color: #2b1162; color: white; padding: 0.45rem 0.9rem; border-radius: 9999px; display:inline-block; font-size:0.9rem; }
+
 /* Small accessibility helpers */
 .sr-only.focus:not(.sr-only) {
 	position: static !important;
@@ -82,3 +98,21 @@
 .transition-smooth {
 	transition: all 220ms cubic-bezier(.4,0,.2,1);
 }
+
+/* Footer specific tweaks */
+.footer-heading { font-weight: 700; color: #ffffff; }
+.footer-link { color: #cbd5e1; text-decoration: none; }
+.footer-link:hover { color: #ffffff; text-decoration: underline; }
+.social-btn { background-color: rgba(255,255,255,0.06); border-radius: 9999px; width: 2.25rem; height:2.25rem; display:flex; align-items:center; justify-content:center; }
+
+/* Site footer refinements to closely match the screenshot */
+.site-footer { background-color: #0b1220; }
+.site-footer .footer-heading { font-size: 1rem; margin-bottom: 0.5rem; }
+.site-footer ul { margin: 0; padding: 0; list-style: none; }
+.site-footer li { color: #cbd5e1; }
+.site-footer a { color: #cbd5e1; }
+.site-footer a:hover { color: #ffffff; }
+.site-footer .social-btn { width: 2.5rem; height: 2.5rem; background-color: rgba(255,255,255,0.04); }
+.site-footer .social-btn img { width: 1rem; height: 1rem; }
+.site-footer .max-w-7xl { padding-left: 1rem; padding-right: 1rem; }
+.site-footer .grid { gap: 2rem; }
